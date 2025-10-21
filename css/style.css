@@ -1,0 +1,48 @@
+/* Common CSS Part Start  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    outline: 0;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+    width: 1370px;
+    margin: 0 auto;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+    line-height: 0.8;
+}
+/* Common CSS Part End  */
+
+/* Button Part Start  */
+.heading{
+    margin-top: 25px;
+    font-size: 40px;
+}
+button{
+    padding: 10px 35px;
+    background: rgb(241, 143, 159);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.darkMode i{
+    color: black;
+}
+.lightMode i{
+  color: white;
+}
+/* Button Part End  */
