@@ -4,13 +4,14 @@
     padding: 0;
     box-sizing: border-box; 
     outline: 0;
+    font-family: "Roboto Condensed", sans-serif;
 }
 a{
     text-decoration: none;
     display: inline-block;
 }
 .container{
-    width: 1370px;
+    width: 1320px;
     margin: 0 auto;
 }
 ul,ol{
@@ -23,10 +24,21 @@ h1,h2,h3,h4,h5,h6,p{
 }
 /* Common CSS Part End  */
 
-/* Button Part Start  */
+/* Heading Part Start  */
+.headingFlex{
+    display: flex;
+    justify-content: center;
+}
 .heading{
     margin-top: 25px;
     font-size: 40px;
+    text-align: center;
+}
+.headingBtn{
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 25px;
 }
 button{
     padding: 10px 35px;
@@ -34,15 +46,77 @@ button{
     border-radius: 10px;
     border: none;
     color: white;
-    font-size: 25px;
-    margin-top: 50px;
-    margin-right: 30px;
     cursor: pointer;
+}
+/* Heading Part End  */
+
+/* Mode Part Start  */
+.mode{
+    display: block;
+    font-size: 15px;
+    display: flex;
+    justify-content: end;
+}
+.darkMode{
+    margin-right: 15px;
 }
 .darkMode i{
     color: black;
 }
 .lightMode i{
-  color: white;
+    color: white;
 }
-/* Button Part End  */
+.form{
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  background: white;
+  width: 500px;
+  margin: 50px auto;
+}
+input{
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 20px;
+    width: 350px;
+}
+.form input{
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+/* Mode Part End  */
+
+/* Add Review Part Start  */
+#reviewContainer{
+    margin-top: 35px;
+}
+#reviewContainer p{
+    margin-left: 55px;
+    line-height: 25px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#reviewInput{
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 20px;
+}
+::placeholder{
+    font-size: 18px;
+}
+#reviewBtn{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+/* Add Review Part End  */
+
+/* Delete Part Start  */
+.deletePart{
+    margin-top: 50px;
+}
+#deleteBtn{
+    margin-top: 25px;
+}
+/* Delete Part End  */

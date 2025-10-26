@@ -51,9 +51,9 @@ console.log(heading.innerText);
 // Button Part Start
 const headingBtn = document.querySelector("button");
 headingBtn.addEventListener("click", function () {
-  heading.style.color = "tomato";
-  heading.style.fontSize = "100px";
-  heading.innerHTML = "Hi Guys";
+  heading.style.color = "#FF4655";
+  heading.style.fontSize = "50px";
+  heading.innerHTML = "Welcome";
 });
 
 let darkMode = document.querySelector(".darkMode");
@@ -78,5 +78,40 @@ inputName.addEventListener("keyup", () => {
 });
 
 // Form Part End
+
+// Add Review Part Start
+let reviewContainer = document.getElementById("reviewContainer");
+let reviewInput = document.getElementById("reviewInput");
+let reviewBtn = document.getElementById("reviewBtn");
+
+reviewBtn.addEventListener("click", () => {
+  let inputValue = reviewInput.value;
+  let paragraph = document.createElement("p");
+  paragraph.innerText = inputValue;
+
+  // appendChild is used to pass vlue of input in new element
+  reviewContainer.appendChild(paragraph);
+  reviewInput.value = " ";
+});
+// Add Review Part End
+
+// Delete Part Start
+let deleteContent = document.getElementById("deleteContent");
+let deleteInput = document.getElementById("deleteInput");
+let deleteBtn = document.getElementById("deleteBtn");
+
+deleteInput.addEventListener("keyup", () => {
+  if (deleteInput.value == "Delete") {
+    deleteBtn.removeAttribute("disabled");
+  } else {
+    deleteBtn.setAttribute("disabled", true);
+  }
+});
+
+deleteBtn.addEventListener("click", () => {
+  deleteContent.style.display = "none";
+  deleteInput.value = "";
+});
+// Delete Part End
 
 // DoM Part End
